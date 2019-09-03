@@ -2,6 +2,7 @@ FROM izakmarais/grafana-reporter:2.2.1
 MAINTAINER Stratio Operations <operations@stratio.com>
 
 ADD entrypoint.sh /entrypoint.sh
+ADD muttrc ~/.mutt/muttrc
 
 RUN apt-get update && \
     apt-get install jq telnet curl wget procps mutt -y && \
