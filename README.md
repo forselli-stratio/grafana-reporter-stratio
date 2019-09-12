@@ -8,5 +8,8 @@ You have to specify some vars to make it work:
 
 | Variable | Definition |
 |-------------------|:--------------|
-| 2.0.x - 2.11.x    | 2.1.x         |
-| 2.12.x - 2.15.x   | 2.2.x         |
+| SSL_CHECK    | Check the SSL issuer and validity. Set this to false if your grafana serves https using an unverified self-signed certificate.(true/false)         |
+| DASHBOARD_ID   | Grafana dashboard id you want to get the report from.         |
+| PROTO   | Grafana Protocol. Change to 'https://' if Grafana is using https.(https:// or http://)         |
+| API_KEY   | Api key to connect to Grafana.         |
+| GRAFANA_URL   | Grafana URL and port         |
