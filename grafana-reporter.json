@@ -6,8 +6,8 @@
   "user": null,
   "env": {
     "GRAFANA_URL": "grafana-eos.marathon.mesos:3000",
-    "DASHBOARD_ID": "S5ydW3FZk",
-    "API_KEY": "eyJrIjoiR1M1Z29wd3hnWkx4bnFtSXFybmdIN1NuNjZtWVBBOXUiLCJuIjoidGVzdCIsImlkIjoxfQ==",
+    "DASHBOARD_ID": "XXXXXX",
+    "API_KEY": "XXXXXXX",
     "PROTO": "https://",
     "SSL_CHECK": "false"
   },
