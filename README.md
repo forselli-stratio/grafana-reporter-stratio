@@ -1,6 +1,8 @@
 # Stratio Grafana Reporter
 
-Stratio grafana reporter is a tool based on IzakMarais/reporter, which is a service that generates a PDF report from a Grafana dashboard.
+Stratio grafana reporter is a tool based on IzakMarais/reporter, which is a service that generates a PDF report from a Grafana dashboard. After generating the PDF, Stratio Grafana Reporter also sends this report to the email account you configure.
+
+Stratio Grafana Reporter also sends the PDF report to the email account you configure.
 
 Stratio Grafana reporters runs as a Metronome job.
 
