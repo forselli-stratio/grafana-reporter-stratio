@@ -10,6 +10,8 @@ Stratio Grafana reporters runs as a Metronome job.
 
 You need to set the Grafana hostport to 3000(or what you want, but consider Grafana reporter connects to the port where the host exposes the container where Grafana runs)
 
+Also, the email adress from which mail is sent needs to have two factor authentication, and you need to create an application password.
+
 You have to specify some vars to make it work:
 
 | Variable | Definition |
@@ -19,3 +21,7 @@ You have to specify some vars to make it work:
 | PROTO   | Grafana Protocol. Change to 'https://' if Grafana is using https.(https:// or http://)         |
 | API_KEY   | API key to connect to Grafana.         |
 | GRAFANA_URL   | Grafana mesos slave URL and port.(grafana-prueba.marathon.slave.mesos:3000)         |
+| MAIL_TO   | Destination mail to send the PDF report.         |
+| MAIL_FROM   | Address from which mail is sent.         |
+| IMAP_PASS   | Mail from application password.         |
+| SMTP   | Smtp address and port.         |

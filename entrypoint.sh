@@ -6,4 +6,4 @@ wget -O /tmp/informe.pdf "localhost:8686/api/v5/report/$DASHBOARD_ID?apitoken=$A
 
 sleep 20
 
-mutt -s 'Informe Semanal' forselli@stratio.com -a /tmp/informe.pdf < /dev/null
+mutt -s 'Informe Semanal' $MAIL_TO -a /tmp/informe.pdf < /dev/null

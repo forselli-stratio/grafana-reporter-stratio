@@ -1,10 +1,10 @@
 set ssl_starttls=yes
 set ssl_force_tls=yes
  
-set imap_user = 'alerts@stratio.com'
-set imap_pass = 'gowfmvniumfuyyty'
+set imap_user = '$MAIL_FROM'
+set imap_pass = '$IMAP_PASS'
  
-set from='alerts@stratio.com'
+set from='$MAIL_FROM'
 set realname='Operations STRATIO'
  
 set folder = imaps://imap.gmail.com/
@@ -15,7 +15,7 @@ set header_cache = "~/.mutt/cache/headers"
 set message_cachedir = "~/.mutt/cache/bodies"
 set certificate_file = "~/.mutt/certificates"
  
-set smtp_url = 'smtps://alerts@stratio.com:gowfmvniumfuyyty@smtp.gmail.com:465/'
+set smtp_url = 'smtps://$MAIL_FROM:$IMAP_PASS@$SMTP/'
  
 set move = no
 set imap_keepalive = 900

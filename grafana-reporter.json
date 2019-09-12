@@ -6,8 +6,8 @@
   "user": null,
   "env": {
     "GRAFANA_URL": "grafana-eos.marathon.mesos:3000",
-    "DASHBOARD_ID": "XXXXXX",
-    "API_KEY": "eyJrIjoiOTJDUUJ3MmMxRm1GRjV0TEZYeENTTmFEVmVNbTc4dlUiLCJuIjoicHJ1ZWJhIiwiaWQiOjF9",
+    "DASHBOARD_ID": "S5ydW3FZk",
+    "API_KEY": "eyJrIjoiR1M1Z29wd3hnWkx4bnFtSXFybmdIN1NuNjZtWVBBOXUiLCJuIjoidGVzdCIsImlkIjoxfQ==",
     "PROTO": "https://",
     "SSL_CHECK": "false"
   },
@@ -27,8 +27,7 @@
     "docker": {
       "image": "grafana-reporter-stratio:0.1.0",
       "forcePullImage": false,
-      "privileged": false,
-      "network": "HOST"
+      "privileged": false
     }
   },
   "healthChecks": [
@@ -42,6 +41,11 @@
   ],
   "readinessChecks": null,
   "dependencies": null,
+  "networks": [
+    {
+      "mode": "container/bridge"
+    }
+  ],
   "upgradeStrategy": {
     "minimumHealthCapacity": 1,
     "maximumOverCapacity": 1
@@ -54,7 +58,7 @@
   "portDefinitions": [
     {
       "protocol": "tcp",
-      "port": 8686,
+      "port": 8686
     }
   ],
   "requirePorts": true
