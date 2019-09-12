@@ -4,6 +4,6 @@
 
 wget -O /tmp/informe.pdf "localhost:8686/api/v5/report/$DASHBOARD_ID?apitoken=$API_KEY"
 
-sleep 500
+sleep 20
 
 mutt -s 'Informe Semanal' forselli@stratio.com -a /tmp/informe.pdf < /dev/null
