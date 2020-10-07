@@ -19,3 +19,6 @@ set smtp_url = 'smtps://$MAIL_FROM:$IMAP_PASS@$SMTP/'
  
 set move = no
 set imap_keepalive = 900
+
+
+TESTING
